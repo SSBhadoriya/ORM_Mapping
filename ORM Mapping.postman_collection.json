@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "26a3f665-4c95-4c7f-b377-4aa78a72beca",
+		"name": "ORM Mapping",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15148058"
+	},
+	"item": [
+		{
+			"name": "One To One",
+			"item": [
+				{
+					"name": "save single record (Emp&Assets)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/orm_app/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orm_app",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single record (Emp&Assests)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/orm_app/getById/102",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orm_app",
+								"getById",
+								"102"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "One To Many",
+			"item": [
+				{
+					"name": "Save Multiple",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/orm_app/createMultiple",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orm_app",
+								"createMultiple"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Many To Many",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/orm_app/createManyToMany",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orm_app",
+								"createManyToMany"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,5 @@
+-> Add POM.xml Maven dependencies of DB driver, spring-web, spring-data-jpa
+-> Add DB relevant, JPA and SQL relevant configuration into "application.properties"
+-> Create two Entity classes and relate them with "OneToOne" mapping. Use appropriate annotations.
+-> Create a repository interface and extends JpaRepository features to proceed CRUD operations.
+-> One DB table will generated then we can apply create and retrieve operations to check the proper functioning of JPA API
